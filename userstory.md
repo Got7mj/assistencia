@@ -25,7 +25,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
 | **Descrição** | O sistema deve permitir o cadastro detalhado de clientes, incluindo informações como nome, endereço, contato, histórico de serviços, CPF, entre outros. Alem disso sistema deve permitir a alteração de qualquer dado contido no cadastro, a consulta e a exclusão do cliente.
-|
+
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
 | RF01          | Cadastrar Cliente |
