@@ -125,7 +125,6 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | ------------- | :------------------------------------------------------------- |
 | **Descrição** | O sistema deve permitir o cadastro detalhado do equipamento, incluindo informações como o id, tipo, marca, modelo e quantidade. Alem disso o sistema deve permitir a consulta do equipamento através do id do mesmo	e	a	exclusão	da	ferramenta. | 
 | **Requisitos envolvidos** |                                                    |
-| ------------- | :------------------------------------------------------------- |
 | RF01          | Cadastrar Equipamento |
 | RF02          | Consultar Equipamento |
 | RF03          | Excluir Equipamento |
@@ -156,7 +155,6 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | ------------- | :------------------------------------------------------------- |
 | **Descrição** | Funcionalidade que permite ao funcionário agendar visitas presenciais para resolver problemas que não podem ser resolvidos remotamente(include manter ordem de serviço). | 
 | **Requisitos envolvidos** |                                                    |
-| ------------- | :------------------------------------------------------------- |
 | RF01          | Agendar Visitas Técnicas |
 
 |                           |                                     |
@@ -185,7 +183,6 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | ------------- | :------------------------------------------------------------- |
 | **Descrição** | Ao salvar uma OS é criado um conta receber automaticamente, esse conta receber futuramente pode vir a ser atualizado pelo funcionário da empresa registrando o pagamento do cliente(include manter ordem de serviço). | 
 | **Requisitos envolvidos** |                                                    |
-| ------------- | :------------------------------------------------------------- |
 | RF01          | Registrar Conta Receber |
 
 |                           |                                     |
@@ -214,7 +211,6 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | ------------- | :------------------------------------------------------------- |
 | **Descrição** | Ao salvar uma OS é criado um conta receber automaticamente, esse conta receber futuramente pode vir a ser atualizado pelo funcionário da empresa registrando o pagamento do cliente(include manter ordem de serviço). | 
 | **Requisitos envolvidos** |                                                    |
-| ------------- | :------------------------------------------------------------- |
 | RF01          | Pagar Conta |
 
 |                           |                                     |
