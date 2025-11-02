@@ -90,10 +90,10 @@ erDiagram
     }
 
     %% RELACIONAMENTOS
-    PESSOA ||--|| CONTATO : possui
-    PESSOA ||--|| ENDERECO : reside
+    PESSOA ||--|| CONTATO : possui    
     PESSOA ||--|| CLIENTE : especializa
     PESSOA ||--|| FUNCIONARIO : especializa
+    ENDERECO ||--|{ PESSOA : abriga
 
     CARGO ||--|{ FUNCIONARIO : possui
     CLIENTE ||--|{ ORDEM_SERVICO : solicita
