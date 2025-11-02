@@ -59,7 +59,7 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
 | **Descrição** | O sistema deve permitir o cadastro detalhado de funcionários, incluindo informações como nome, endereço, contato, horário de expediente, salário, CNPJ, entre outros. Alem disso o sistema deve permitir a alteração de qualquer dado contido no cadastro do funcionário, a consulta e  desativação do funcionário. 
-| 
+ 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
 | RF01          | Cadastrar Funcionario |
