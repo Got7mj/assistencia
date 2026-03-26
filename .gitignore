@@ -1,4 +1,27 @@
+# Ambiente Virtual
 .venv/
+
+# Cache do Python
 __pycache__/
 *.pyc
+
+# Arquivos de variáveis de ambiente
 .env
+
+# Bancos de dados SQLite
+*.db
+data/*.db
+assistencia_tecnica.db
+assistencia.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Logs e temporários
+*.log
+tmp/
