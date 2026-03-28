@@ -13,19 +13,16 @@ Descrição: O Sistema de Gestão de Assistência Técnica é uma aplicação we
 
 Membro     |     Papel   |   E-mail   |
 ---------  | ----------- | ---------- |
-Taciano    | Cliente Professor  | taciano@bsi.ufrn.br
-Sandra     | Cliente (Diretora) | sandra@ceres.ufrn.br
-Zé         | Analista, Testador | ze@silva.com
-Maria      | Gerente, Desenvolvedor | maria@silva.com
+Jadson    | --  | -- |
+Mariana     | -- | -- |
+
 
 ### Matriz de Competências
 
 Membro     |     Competências   |
 ---------  | ----------- |
-Taciano    | Desenvolvedor Java, Junit, Eclipse, JSP, JSF, Hibernate, Matemática, Latex, etc |
-Sandra     | Gestão, Geográfa |
-Zé         | Desenvolvedor Java, Astrofísico |
-Maria      | Gestão, Desenvolvedor Java, Pesquisadora em Engenharia de Software |
+Jadson    | --  |
+Mariana     | -- | 
 
 ## Perfis dos Usuários
 
