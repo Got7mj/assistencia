@@ -40,14 +40,14 @@ Discente | Este usuário pode verificar o plano de aulas (horários), demosntrar
 ## Lista de Requisitos Funcionais
 
 ### Entidade Cliente - US01 - Manter Cliente
-Um centro representa uma unidade administrativa da Universidade. Um centro tem código, nome, sigla, endereço e site.
+Um cliente representa uma pessoa ou empresa que utiliza os serviços da assistência técnica. Possui informações detalhadas como nome, endereço, contato, CPF e histórico de serviços.
 
 Requisito                     | Descrição   | Ator |
 ---------                     | ----------- | ---------- |
-RF01.01 - Inserir Centro      | Insere novo centro informando: código, nome, sigla, endereço e site. | Administrador |
-RF01.02 - Listar Centros      | Listagem dos centros utilizando filtros nos atributos: código, nome, sigla, endereço e site. | Administrador, Docente, Discente |
-RF01.03 - Atualizar Centro    | Atualiza um centro informando: nome, sigla, endereço e site. | Administrador |
-RF01.04 - Deletar Centro      | Deleta um centro informando o código. | Administrador |
+RF01.1 - Cadastrar Cliente    | Insere novo novo cliente informando: id, nome, endereço, contato, CPF. | -- |
+RF01.2 - Alterar Cliente      | Atualiza qualquer dado contido no cadastro do cliente, caso seja necessário. | -- |
+RF01.03 - Atualizar Centro    | Atualiza um centro informando: nome, sigla, endereço e site. | -- |
+RF01.04 - Deletar Centro      | Deleta um centro informando o código. | -- |
 
 ---
 
