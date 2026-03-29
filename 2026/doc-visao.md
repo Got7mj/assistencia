@@ -30,9 +30,9 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 
 Perfil                                 | Descrição   |
 ---------                              | ----------- |
-Clientes | Este usuário pode verificar suas ordens de serviço, consultar contas a receber e realizar pagamentos online de serviços concluídos.
+Cliente | Este usuário pode verificar suas ordens de serviço, consultar contas a receber e realizar pagamentos online de serviços concluídos.
 Administrativo | Este usuário é responsável pela gestão do sistema, cadastro de informações, controle financeiro e registro de pagamentos recebidos fora do sistema.
-Técnicos | Este usuário é responsável pela execução dos serviços, atualização das ordens de serviço e registro de peças utilizadas.
+Técnico | Este usuário é responsável pela execução dos serviços, atualização das ordens de serviço e registro de peças utilizadas.
 
 ## Lista de Requisitos Funcionais
 
@@ -65,7 +65,7 @@ Um funcionário representa o usuário responsável pelas operações do sistema,
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
 RF03.1 - Cadastrar Funcionário | Insere novo funcionário informando: código, nome, CPF, cargo, salario, carteira, expendiente. | Administrativo |
-RF03.2 - Alterar Funcionário | Atualiza um departamento informando: código, nome, CPF, cargo, salario, carteira, expendiente. | Administrativo |
+RF03.2 - Alterar Funcionário | Atualiza um funcionário informando: código, nome, CPF, cargo, salario, carteira, expendiente. | Administrativo |
 RF03.3 - Consultar Funcionário |  Consulta do funcionário através dos dados do mesmo. | Administrativo |
 RF03.4 - Desativar Funcionário | Desativar um funcionário informando o id. | Administrativo |
 
@@ -77,11 +77,11 @@ Uma ordem de serviço registra o atendimento realizado, podendo conter vários e
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
 RF04.1 - Abrir ordem de Serviço  | Criar de order de serviço para solicitação de reparo ou manutenção, incluir informações sobre o cliente, descrição do problema e quaisquer detalhes relevantes. | Administrador, Cliente |
-RF04.2 - Editar ordem de serviço | Listagem de salas utilizando filtros nos atributos: número, nome, capacidade, tamanho, bloco e centro. | Administrador |
-RF04.3 - Consultar ordem de serviço | Atualiza uma sala informando: nome, capacidade, tamanho, bloco e centro. | Administrador |
-RF04.4 - Atualizar Status da OS         | Deleta uma sala informando o número. | Administrador |
-RF04.5 - Encerrar ordem de serviço         | Deleta uma sala informando o número. | Administrador |
-RF04.6 - Emitir Relatório         | Deleta uma sala informando o número. | Administrador |
+RF04.2 - Editar ordem de serviço | Atualiza uma OS informando:informações sobre o cliente, descrição do problema e quaisquer detalhes relevantes. | Administrador |
+RF04.3 - Consultar ordem de serviço | Consulta UMA OS informando: id. | Técnico, Administrador |
+RF04.4 - Atualizar Status da OS         | Alterar o status da OS conforme andamento. | Técnico, Administrador |
+RF04.5 - Encerrar ordem de serviço         | Encerramento da OS após a conclusão das atividades.  | Técnico |
+RF04.6 - Emitir Relatório         | Gerar relatórios diversos, como histórico de serviços realizados, faturamento por período, entre outros.  | Técnico, Administrador |
 ---
 
 ### Entidade Equipamento  - RF05 - Manter Equipamento 
@@ -106,21 +106,21 @@ RF06 - Agendar Visitas Técnicas  | Funcionalidade que permite ao funcionário a
 
 ---
 
-### Entidade Professor - RF007 - Registrar Conta Receber 
-Um professor tem: matrícula, nome, e-mail, telefone e o departamento.
+### Entidade Registrar Conta Receber - RF007 - Registrar Conta Receber 
+Ao salvar uma OS é criado um conta receber automaticamente, na qual possuir: id,valor, data de pagamento.
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF07   | Insere novo professor informando: matrícula, nome, e-mail, telefone e departamento. | Administrador |
+RF07 - Registrar Conta Receber | Ao salvar uma OS é criado um conta receber automaticamente. | -- |
 
 ---
 
-### Entidade Turma - RF008 - Pagar Conta
-Uma turma tem: código, professores, salas e horários. É de um componente curricular e pode ter mais de um professor, uma ou mais salas e vários horários de aulas.
+### Entidade Pagar Conta - RF008 - Pagar Conta
+Permitir a funcionalidade ao cliente selecionar uma conta a pagar e com os detalhes do pagamento, incluindo o valor a ser pago, de forma conveniente e segura. 
 
 Requisito                     | Descrição   | Ator                      |
 ---------                     | ----------- | ----------                |
-RF08 - Inserir Turma        | Insere nova turma informando: código, componente curricular, professores, salas e horários. | Chefes, Coordenadores |
+RF08 - Pagar Conta        | Permitir a funcionalidade ao cliente selecionar uma conta a pagar | Cliente  |
 
 
 ---
