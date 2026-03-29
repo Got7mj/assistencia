@@ -1,3 +1,4 @@
+```mermaid
 usecaseDiagram
 actor Cliente
 actor Funcionario
