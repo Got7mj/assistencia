@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     PESSOA {
         int id PK
