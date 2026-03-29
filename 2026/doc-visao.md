@@ -31,12 +31,12 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 Perfil                                 | Descrição   |
 ---------                              | ----------- |
 Clientes | Este usuário pode verificar suas ordens de serviço, consultar contas a receber e realizar pagamentos online de serviços concluídos.
-Funcionários Administrativos | Este usuário é responsável pela gestão do sistema, cadastro de informações, controle financeiro e registro de pagamentos recebidos fora do sistema.
+Administrativo | Este usuário é responsável pela gestão do sistema, cadastro de informações, controle financeiro e registro de pagamentos recebidos fora do sistema.
 Técnicos | Este usuário é responsável pela execução dos serviços, atualização das ordens de serviço e registro de peças utilizadas.
 
 ## Lista de Requisitos Funcionais
 
-### Entidade Autenticar - US01 - Autenticar
+### Entidade Autenticar - RF01 - Autenticar
 Ato dos usuários (clientes e funcionários) realizem login utilizando credenciais válidas.
 
 Requisito                     | Descrição   | Ator |
@@ -47,43 +47,44 @@ RF01.3 - Recuperar Senha      | Açao que permitir ao usuário recupere sua senh
 
 ---
 
-### Entidade Cliente - US02 - Manter Cliente
+### Entidade Cliente - RF02 - Manter Cliente
 Um cliente representa uma pessoa ou empresa que utiliza os serviços da assistência técnica. Possui informações detalhadas como nome, endereço, contato, CPF e histórico de serviços.
 
 Requisito                     | Descrição   | Ator |
 ---------                     | ----------- | ---------- |
-RF02.1 - Cadastrar Cliente    | Insere novo novo cliente informando: id, nome, endereço, contato, CPF. | -- |
-RF02.2 - Alterar Cliente      | Atualiza qualquer dado contido no cadastro do cliente, caso seja necessário. | -- |
-RF02.3 - Consultar Cliente   | Consulta do cliente através dos dados do mesmo. | -- |
-RF02.4 - Desativar Cliente   | Desativar um cliente informando o id. | -- |
+RF02.1 - Cadastrar Cliente    | Insere novo novo cliente informando: id, nome, endereço, contato, CPF. | Administrativo |
+RF02.2 - Alterar Cliente      | Atualiza qualquer dado contido no cadastro do cliente, caso seja necessário. | Administrativo |
+RF02.3 - Consultar Cliente   | Consulta do cliente através dos dados do mesmo. | Administrativo |
+RF02.4 - Desativar Cliente   | Desativar um cliente informando o id. | Administrativo |
 
 ---
 
-### Entidade Funcionário - US03 - Manter Funcionário
-O cadastro de funcionários classificados como: Técnico e Administrativo.
+### Entidade Funcionário - RF03 - Manter Funcionário
+Um funcionário representa o usuário responsável pelas operações do sistema, classificados como: Técnico e Administrativo.
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF03.1 - Cadastrar Funcionário | Insere novo funcionário informando: código, nome, CPF, cargo, salario, carteira, expendiente. | -- |
-RF03.2 - Alterar Funcionário | Atualiza um departamento informando: código, nome, CPF, cargo, salario, carteira, expendiente. | -- |
-RF03.3 - Consultar Funcionário |  Consulta do funcionário através dos dados do mesmo. | -- |
-RF03.4 - Desativar Funcionário | Desativar um funcionário informando o id. | -- |
+RF03.1 - Cadastrar Funcionário | Insere novo funcionário informando: código, nome, CPF, cargo, salario, carteira, expendiente. | Administrativo |
+RF03.2 - Alterar Funcionário | Atualiza um departamento informando: código, nome, CPF, cargo, salario, carteira, expendiente. | Administrativo |
+RF03.3 - Consultar Funcionário |  Consulta do funcionário através dos dados do mesmo. | Administrativo |
+RF03.4 - Desativar Funcionário | Desativar um funcionário informando o id. | Administrativo |
 
 ---
 
-### Entidade Ordem de Serviço - US04 - Manter Ordem de Serviço
-Uma sala tem um número, um nome, capacidade, tamanho, bloco e o centro ao qual pertence.
+### Entidade Ordem de Serviço - RF04 - Manter Ordem de Serviço
+Uma ordem de serviço registra o atendimento realizado, podendo conter vários equipamentos e status de acompanhamento.
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF04.1 - Abrir ordem de Serviço         | Insere nova sala informando: número, nome, capacidade, tamanho, bloco e centro. | Administrador |
-RF04.2 - Listar Salas         | Listagem de salas utilizando filtros nos atributos: número, nome, capacidade, tamanho, bloco e centro. | Administrador |
-RF04.3 - Atualizar Sala       | Atualiza uma sala informando: nome, capacidade, tamanho, bloco e centro. | Administrador |
-RF04.4 - Deletar Sala         | Deleta uma sala informando o número. | Administrador |
-
+RF04.1 - Abrir ordem de Serviço  | Criar de order de serviço para solicitação de reparo ou manutenção, incluir informações sobre o cliente, descrição do problema e quaisquer detalhes relevantes. | Administrador, Cliente |
+RF04.2 - Editar ordem de serviço | Listagem de salas utilizando filtros nos atributos: número, nome, capacidade, tamanho, bloco e centro. | Administrador |
+RF04.3 - Consultar ordem de serviço | Atualiza uma sala informando: nome, capacidade, tamanho, bloco e centro. | Administrador |
+RF04.4 - Atualizar Status da OS         | Deleta uma sala informando o número. | Administrador |
+RF04.5 - Encerrar ordem de serviço         | Deleta uma sala informando o número. | Administrador |
+RF04.6 - Emitir Relatório         | Deleta uma sala informando o número. | Administrador |
 ---
 
-### Entidade Componente Curricular - RF004 - Manter Componente Curricular
+### Entidade Equipamento  - RF05 - Manter Equipamento 
 Um componente curricular é de um tipo de componente. Ele tem: código, nome, ementa, departamento, carga horária, modalidade, equivalências, requisitos com outros componentes e data de criação.
 
 Requisito                     | Descrição   | Ator           |
@@ -95,7 +96,7 @@ RF04.04 - Deletar Componente   | Deleta um componente curricular informando o c�
 
 ---
 
-### Entidade Horário de Aula - RF005 - Manter Horário de Aula
+### Entidade Horário de Aula - RF005 -Agendar Visitas Técnicas
 Um horário tem: dia da semana, turno, ordem (identificador), hora de início e hora de final.
 
 Requisito                     | Descrição   | Ator           |
@@ -107,7 +108,7 @@ RF05.04 - Deletar Horário      | Deleta um horário informando a ordem. | Admin
 
 ---
 
-### Entidade Professor - RF006 - Manter Professor
+### Entidade Professor - RF006 - Registrar Conta Receber 
 Um professor tem: matrícula, nome, e-mail, telefone e o departamento.
 
 Requisito                     | Descrição   | Ator           |
@@ -119,7 +120,7 @@ RF06.04 - Deletar Professor    | Deleta um professor informando a matrícula. | 
 
 ---
 
-### Entidade Turma - RF007 - Manter Turma
+### Entidade Turma - RF007 - Pagar Conta
 Uma turma tem: código, professores, salas e horários. É de um componente curricular e pode ter mais de um professor, uma ou mais salas e vários horários de aulas.
 
 Requisito                     | Descrição   | Ator                      |
@@ -131,31 +132,6 @@ RF07.04 - Deletar Turma        | Deleta uma turma informando o código. | Chefes
 
 ---
 
-### Entidade Usuário - US08 - Manter Usuário
-Um usuário tem: nome, e-mail, senha e pode pertencer a um ou mais grupos.
-
-Requisito                     | Descrição   | Ator           |
----------                     | ----------- | ----------     |
-RF08.01 - Inserir Usuário      | Insere novo usuário informando: nome, e-mail, senha e grupos. | Administrador |
-RF08.02 - Listar Usuários      | Listagem de usuários utilizando filtros nos atributos: nome, e-mail e grupos. | Administrador |
-RF08.03 - Atualizar Usuário    | Atualiza um usuário informando: nome, e-mail, senha e grupos. | Administrador |
-RF08.04 - Deletar Usuário      | Deleta um usuário informando o e-mail. | Administrador |
-RF08.05 - Login do Usuário     | Realiza login informando e-mail e senha. | Usuário |
-RF08.06 - Logout do Usuário    | Realiza logout encerrando a sessão do usuário. | Usuário |
-
----
-
-### Entidade Grupo - US09 - Manter Grupo
-Um grupo define permissões atribuídas a um conjunto de usuários. Ele tem: nome e permissões.
-
-Requisito                     | Descrição   | Ator           |
----------                     | ----------- | ----------     |
-RF09.01 - Inserir Grupo        | Insere novo grupo informando: nome e permissões. | Administrador |
-RF09.02 - Listar Grupos        | Listagem de grupos utilizando filtros nos atributos: nome e permissões. | Administrador |
-RF09.03 - Atualizar Grupo      | Atualiza um grupo informando: nome e permissões. | Administrador |
-RF09.04 - Deletar Grupo        | Deleta um grupo informando o nome. | Administrador |
-
----
 
 ### Modelo Conceitual
 
