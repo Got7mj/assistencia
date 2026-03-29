@@ -41,9 +41,9 @@ Ato dos usuários (clientes e funcionários) realizem login utilizando credencia
 
 Requisito                     | Descrição   | Ator |
 ---------                     | ----------- | ---------- |
-RF01.1 - Realizar Login       | Permitir que usuários (clientes e funcionários) realizem login utilizando credenciais válidas. | -- |
-RF01.2 - Realizar Logout      | Açao que permitir ao usuário encerre sua sessão com segurança. | -- |
-RF01.3 - Recuperar Senha      | Açao que permitir ao usuário recupere sua senha por meio de e-mail ou SMS. | -- |
+RF01.1 - Realizar Login       | Permitir que usuários (clientes e funcionários) realizem login utilizando credenciais válidas. | Cliente, Funcionário |
+RF01.2 - Realizar Logout      | Açao que permitir ao usuário encerre sua sessão com segurança. | Cliente, Funcionário |
+RF01.3 - Recuperar Senha      | Açao que permitir ao usuário recupere sua senha por meio de e-mail ou SMS. | Cliente, Funcionário |
 
 ---
 
@@ -85,19 +85,19 @@ RF04.6 - Emitir Relatório         | Deleta uma sala informando o número. | Adm
 ---
 
 ### Entidade Equipamento  - RF05 - Manter Equipamento 
-Um componente curricular é de um tipo de componente. Ele tem: código, nome, ementa, departamento, carga horária, modalidade, equivalências, requisitos com outros componentes e data de criação.
+Um componente essencial ao realizar OS. Ele tem: código, tipo, marca, modelo, quantidade.
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF04.01 - Inserir Componente   | Insere novo componente curricular informando: código, nome, ementa, departamento, carga horária, modalidade, equivalências, requisitos e data de criação. | Administrador |
-RF04.02 - Listar Componentes   | Listagem de componentes curriculares utilizando filtros nos atributos: código, nome, ementa, departamento, carga horária, modalidade e data de criação. | Administrador |
-RF04.03 - Atualizar Componente | Atualiza um componente curricular informando: nome, ementa, departamento, carga horária, modalidade, equivalências e requisitos. | Administrador |
-RF04.04 - Deletar Componente   | Deleta um componente curricular informando o código. | Administrador |
+RF05.1 - Cadastrar Equipamento   | Insere novo equipamento informando: código, tipo, marca, modelo, quantidade. | Administrador |
+RF05.2 - Listar Equipamento   | Listagem dos equipamentos cadastrados. | Administrador |
+RF05.3 - Consultar Equipamento | Consultar equipamento informando: código, tipo, marca, modelo. | Administrador |
+RF05.4 - Desativar Equipamento   | Desativa um equipamento informando seu identificador. | Administrador |
 
 ---
 
-### Entidade Horário de Aula - RF005 -Agendar Visitas Técnicas
-Um horário tem: dia da semana, turno, ordem (identificador), hora de início e hora de final.
+### Entidade Visita Técnica - RF006 - Agendar Visitas Técnicas
+Uma visita técnica representa um atendimento presencial vinculado a uma ordem de serviço.
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
