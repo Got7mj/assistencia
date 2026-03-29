@@ -130,86 +130,7 @@ RF08 - Pagar Conta        | Permitir a funcionalidade ao cliente selecionar uma 
 
 Abaixo apresentamos o modelo conceitual usando o **Mermaid**.
 
-```mermaid
-erDiagram
-    CENTRO {
-        string codigo PK
-        string nome
-        string sigla
-        string endereco
-        string site
-    }
-
-
-    DEPARTAMENTO {
-        string codigo PK
-        string nome
-        string sigla
-        string endereco
-    }
-    DEPARTAMENTO ||--o{ CENTRO : "pertence a"
-
-    SALA {
-        string numero PK
-        string nome
-        int capacidade
-        float tamanho
-        string bloco
-    }
-    SALA ||--o{ CENTRO : "pertence a"
-
-    COMPONENTE {
-        string codigo PK
-        string nome
-        text ementa
-        int cargaHoraria
-        string modalidade
-        date dataCriacao
-    }
-    COMPONENTE ||--o{ DEPARTAMENTO : "é de"
-    COMPONENTE }o--o{ COMPONENTE : "tem equivalências/requisitos"
-
-    HORARIO {
-        int id PK
-        string diaSemana
-        string turno
-        int ordem
-        time horaInicio
-        time horaFim
-    }
-
-    PROFESSOR {
-        string matricula PK
-        string nome
-        string email
-        string telefone
-    }
-    PROFESSOR ||--o{ DEPARTAMENTO : "pertence a"
-
-    TURMA {
-        string codigo PK
-    }
-    TURMA ||--o{ COMPONENTE : "é de"
-    TURMA ||--o{ PROFESSOR : "é ministrada por"
-    TURMA ||--o{ SALA : "é realizada em"
-    TURMA ||--o{ HORARIO : "tem"
-
-    USUARIO {
-        string email PK
-        string nome
-        string senha
-    }
-    USUARIO }o--o{ GRUPO : "pertence a"
-
-    GRUPO {
-        string nome PK
-    }
-    GRUPO ||--o{ PERMISSAO : "tem"
-
-    PERMISSAO {
-        string nome PK
-    }
-```
+--
 
 #### Descrição das Entidades
 
@@ -227,9 +148,6 @@ Tabela com o mapeamento dos riscos do projeto, as possíveis soluções e os res
 
 Data | Risco | Prioridade | Responsável | Status | Providência/Solução |
 ------ | ------ | ------ | ------ | ------ | ------ |
-10/03/2018 | Não aprendizado das ferramentas utilizadas pelos componentes do grupo | Alta | Todos | Vigente | Reforçar estudos sobre as ferramentas e aulas com a integrante que conhece a ferramenta |
-10/03/2018 | Ausência por qualquer motivo do cliente | Média | Gerente | Vigente | Planejar o cronograma tendo em base a agenda do cliente |
-10/03/2018 | Divisão de tarefas mal sucedida | Baixa | Gerente | Vigente | Acompanhar de perto o desenvolvimento de cada membro da equipe |
-10/03/2018 | Implementação de protótipo com as tecnologias | Alto | Todos | Resolvido | Encontrar tutorial com a maioria da tecnologia e implementar um caso base do sistema |
+--|--|--|--|--|
 
 ### Referências
