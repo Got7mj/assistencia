@@ -14,7 +14,7 @@ Descrição: O Sistema de Gestão de Assistência Técnica é uma aplicação we
 Membro     |     Papel   |   E-mail   |
 ---------  | ----------- | ---------- |
 Jadson    | --  | -- |
-Mariana     | -- | araujodemedeirismariana@gmail.com |
+Mariana     | -- | araujodemedeirosmariana@gmail.com |
 
 
 ### Matriz de Competências
@@ -101,34 +101,27 @@ Uma visita técnica representa um atendimento presencial vinculado a uma ordem d
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF05.01 - Inserir Horário      | Insere novo horário informando: dia da semana, turno, ordem, hora de início e hora de final. | Administrador |
-RF05.02 - Listar Horários      | Listagem de horários utilizando filtros nos atributos: dia da semana, turno, ordem, hora de início e hora de final. | Administrador |
-RF05.03 - Atualizar Horário    | Atualiza um horário informando: dia da semana, turno, ordem, hora de início e hora de final. | Administrador |
-RF05.04 - Deletar Horário      | Deleta um horário informando a ordem. | Administrador |
+RF06 - Agendar Visitas Técnicas  | Funcionalidade que permite ao funcionário administrativo agendar visitas presenciais para resolver problemas que não podem ser resolvidos remotamente.  | Administrador |
+
 
 ---
 
-### Entidade Professor - RF006 - Registrar Conta Receber 
+### Entidade Professor - RF007 - Registrar Conta Receber 
 Um professor tem: matrícula, nome, e-mail, telefone e o departamento.
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF06.01 - Inserir Professor    | Insere novo professor informando: matrícula, nome, e-mail, telefone e departamento. | Administrador |
-RF06.02 - Listar Professores   | Listagem de professores utilizando filtros nos atributos: matrícula, nome, e-mail, telefone e departamento. | Administrador |
-RF06.03 - Atualizar Professor  | Atualiza um professor informando: nome, e-mail, telefone e departamento. | Administrador |
-RF06.04 - Deletar Professor    | Deleta um professor informando a matrícula. | Administrador |
+RF07   | Insere novo professor informando: matrícula, nome, e-mail, telefone e departamento. | Administrador |
 
 ---
 
-### Entidade Turma - RF007 - Pagar Conta
+### Entidade Turma - RF008 - Pagar Conta
 Uma turma tem: código, professores, salas e horários. É de um componente curricular e pode ter mais de um professor, uma ou mais salas e vários horários de aulas.
 
 Requisito                     | Descrição   | Ator                      |
 ---------                     | ----------- | ----------                |
-RF07.01 - Inserir Turma        | Insere nova turma informando: código, componente curricular, professores, salas e horários. | Chefes, Coordenadores |
-RF07.02 - Listar Turmas         | Listagem de turmas utilizando filtros nos atributos: código, componente curricular, professores, salas e horários. | Chefes, Coordenadores |
-RF07.03 - Atualizar Turma      | Atualiza uma turma informando: professores, salas e horários. | Chefes, Coordenadores |
-RF07.04 - Deletar Turma        | Deleta uma turma informando o código. | Chefes, Coordenadores |
+RF08 - Inserir Turma        | Insere nova turma informando: código, componente curricular, professores, salas e horários. | Chefes, Coordenadores |
+
 
 ---
 
