@@ -30,9 +30,9 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 
 Perfil                                 | Descrição   |
 ---------                              | ----------- |
-Clientes | --
-Funcionários Administrativos | --
-Técnicos | --
+Clientes | Este usuário pode verificar suas ordens de serviço, consultar contas a receber e realizar pagamentos online de serviços concluídos.
+Funcionários Administrativos | Este usuário é responsável pela gestão do sistema, cadastro de informações, controle financeiro e registro de pagamentos recebidos fora do sistema.
+Técnicos | Este usuário é responsável pela execução dos serviços, atualização das ordens de serviço e registro de peças utilizadas.
 
 ## Lista de Requisitos Funcionais
 
