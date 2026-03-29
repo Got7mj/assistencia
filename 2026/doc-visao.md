@@ -149,5 +149,13 @@ Tabela com o mapeamento dos riscos do projeto, as possíveis soluções e os res
 Data | Risco | Prioridade | Responsável | Status | Providência/Solução |
 ------ | ------ | ------ | ------ | ------ | ------ |
 --|--|--|--|--|
+--------
+## Lista de User Stories (Versão 1)
+Tabela contendo o planejamento inicial das funcionalidades:
+
+| ID | Título do User Story | Requisitos Funcionais Relacionados | Responsável pelo Detalhamento |
+|:---|:---|:---|:---|
+| US01 | Manter Cadastro de Usuários | RF01, RF02 | Nome do Membro A |
+| US02 | Gerenciar Estoque | RF03, RF04 | Nome do Membro B |
 
 ### Referências
