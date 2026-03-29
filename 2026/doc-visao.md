@@ -30,45 +30,56 @@ O sistema poderá ser utilizado por diversos usuários. Temos os seguintes perfi
 
 Perfil                                 | Descrição   |
 ---------                              | ----------- |
--- | --
--- | --
--- | --
+Clientes | --
+Funcionários Administrativos | --
+Técnicos | --
 
 ## Lista de Requisitos Funcionais
 
-### Entidade Cliente - US01 - Manter Cliente
+### Entidade Autenticar - US01 - Autenticar
+Ato dos usuários (clientes e funcionários) realizem login utilizando credenciais válidas.
+
+Requisito                     | Descrição   | Ator |
+---------                     | ----------- | ---------- |
+RF01.1 - Realizar Login       | Permitir que usuários (clientes e funcionários) realizem login utilizando credenciais válidas. | -- |
+RF01.2 - Realizar Logout      | Açao que permitir ao usuário encerre sua sessão com segurança. | -- |
+RF01.3 - Recuperar Senha      | Açao que permitir ao usuário recupere sua senha por meio de e-mail ou SMS. | -- |
+
+---
+
+### Entidade Cliente - US02 - Manter Cliente
 Um cliente representa uma pessoa ou empresa que utiliza os serviços da assistência técnica. Possui informações detalhadas como nome, endereço, contato, CPF e histórico de serviços.
 
 Requisito                     | Descrição   | Ator |
 ---------                     | ----------- | ---------- |
-RF01.1 - Cadastrar Cliente    | Insere novo novo cliente informando: id, nome, endereço, contato, CPF. | -- |
-RF01.2 - Alterar Cliente      | Atualiza qualquer dado contido no cadastro do cliente, caso seja necessário. | -- |
-RF01.03 - Atualizar Centro    | Atualiza um centro informando: nome, sigla, endereço e site. | -- |
-RF01.04 - Deletar Centro      | Deleta um centro informando o código. | -- |
+RF02.1 - Cadastrar Cliente    | Insere novo novo cliente informando: id, nome, endereço, contato, CPF. | -- |
+RF02.2 - Alterar Cliente      | Atualiza qualquer dado contido no cadastro do cliente, caso seja necessário. | -- |
+RF02.3 - Consultar Cliente   | Consulta do cliente através dos dados do mesmo. | -- |
+RF02.4 - Desativar Cliente   | Desativar um cliente informando o id. | -- |
 
 ---
 
-### Entidade Departamento - US02 - Manter Departamento
-Um departamento tem código, nome, sigla, endereço e o centro ao qual pertence.
+### Entidade Funcionário - US03 - Manter Funcionário
+O cadastro de funcionários classificados como: Técnico e Administrativo.
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF02.01 - Inserir Departamento | Insere novo departamento informando: código, nome, sigla, endereço e centro. | Administrador |
-RF02.02 - Listar Departamentos | Listagem de departamentos utilizando filtros nos atributos: código, nome, sigla, endereço e centro. | Administrador |
-RF02.03 - Atualizar Departamento | Atualiza um departamento informando: nome, sigla, endereço e centro. | Administrador |
-RF02.04 - Deletar Departamento | Deleta um departamento informando o código. | Administrador |
+RF03.1 - Cadastrar Funcionário | Insere novo funcionário informando: código, nome, CPF, cargo, salario, carteira, expendiente. | -- |
+RF03.2 - Alterar Funcionário | Atualiza um departamento informando: código, nome, CPF, cargo, salario, carteira, expendiente. | -- |
+RF03.3 - Consultar Funcionário |  Consulta do funcionário através dos dados do mesmo. | -- |
+RF03.4 - Desativar Funcionário | Desativar um funcionário informando o id. | -- |
 
 ---
 
-### Entidade Sala - US03 - Manter Sala
+### Entidade Ordem de Serviço - US04 - Manter Ordem de Serviço
 Uma sala tem um número, um nome, capacidade, tamanho, bloco e o centro ao qual pertence.
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF03.01 - Inserir Sala         | Insere nova sala informando: número, nome, capacidade, tamanho, bloco e centro. | Administrador |
-RF03.02 - Listar Salas         | Listagem de salas utilizando filtros nos atributos: número, nome, capacidade, tamanho, bloco e centro. | Administrador |
-RF03.03 - Atualizar Sala       | Atualiza uma sala informando: nome, capacidade, tamanho, bloco e centro. | Administrador |
-RF03.04 - Deletar Sala         | Deleta uma sala informando o número. | Administrador |
+RF04.1 - Abrir ordem de Serviço         | Insere nova sala informando: número, nome, capacidade, tamanho, bloco e centro. | Administrador |
+RF04.2 - Listar Salas         | Listagem de salas utilizando filtros nos atributos: número, nome, capacidade, tamanho, bloco e centro. | Administrador |
+RF04.3 - Atualizar Sala       | Atualiza uma sala informando: nome, capacidade, tamanho, bloco e centro. | Administrador |
+RF04.4 - Deletar Sala         | Deleta uma sala informando o número. | Administrador |
 
 ---
 
