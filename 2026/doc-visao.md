@@ -267,16 +267,19 @@ Data | Risco | Prioridade | Responsável | Status | Providência/Solução |
 
 Data |	Versão	| Descrição	| Autor |
 ------ | ------ | ------ | ------ |
-31/03/2026	| 0.0.1	Criação do documento e template | Mariana
-31/03/2026	| 0.0.2	Detalhamento dos User Stories US01 ao US10 | Mariana
-31/03/2026	| 0.0.2	Detalhamento dos User Stories US01 ao US10 | Mariana
-31/03/2026	| 0.0.2	Detalhamento dos User Stories US01 ao US10 | Mariana
-31/03/2026	| 0.0.2	Detalhamento dos User Stories US01 ao US10 | Mariana
-31/03/2026	| 0.0.2	Detalhamento dos User Stories US01 ao US10 | Mariana
-31/03/2026	| 0.0.2	Detalhamento dos User Stories US01 ao US10 | Mariana
-31/03/2026	| 0.0.2	Detalhamento dos User Stories US01 ao US10 | Mariana
-31/03/2026	| 0.0.2	Detalhamento dos User Stories US01 ao US10 | Mariana
+31/03/2026	| 0.0.1	| Criação do documento e template | Mariana
+31/03/2026	| 0.0.2	| Detalhamento dos User Stories US01 ao US10 | Mariana
+31/03/2026	| 0.0.2	| Detalhamento dos User Stories US01 ao US10 | Mariana
+31/03/2026	| 0.0.2	| Detalhamento dos User Stories US01 ao US10 | Mariana
+31/03/2026	| 0.0.2	| Detalhamento dos User Stories US01 ao US10 | Mariana
+31/03/2026	| 0.0.2	| Detalhamento dos User Stories US01 ao US10 | Mariana
+31/03/2026	| 0.0.2	| Detalhamento dos User Stories US01 ao US10 | Mariana
+31/03/2026	| 0.0.2	| Detalhamento dos User Stories US01 ao US10 | Mariana
+31/03/2026	| 0.0.2	| Detalhamento dos User Stories US01 ao US10 | Mariana
 31/03/2026	 | 1.0.0	Documento completo com todos os User Stories| Mariana
+
+--------
+
 User Story US01 - Autenticar no Sistema
 Campo	Descrição
 Título	Autenticar no Sistema
