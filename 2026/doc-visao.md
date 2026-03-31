@@ -56,7 +56,7 @@ Requisito                     | Descrição   | Ator |
 ---------                     | ----------- | ---------- |
 RF02.1 - Cadastrar Cliente    | Insere novo novo cliente informando: id, nome, endereço, contato, CPF. | Administrativo |
 RF02.2 - Alterar Cliente      | Atualiza qualquer dado contido no cadastro do cliente, caso seja necessário. | Administrativo |
-RF02.3 - Consultar Cliente   | Consulta do cliente através dos dados do mesmo. | Administrativo |
+RF02.3 - Consultar Cliente   | Consulta do cliente através dos dados do mesmo. | Administrativo, Técnico |
 RF02.4 - Desativar Cliente   | Desativar um cliente informando o id. | Administrativo |
 
 ---
@@ -78,9 +78,9 @@ Uma ordem de serviço registra o atendimento realizado, podendo conter vários e
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF04.1 - Abrir ordem de Serviço  | Criar de order de serviço para solicitação de reparo ou manutenção, incluir informações sobre o cliente, descrição do problema e quaisquer detalhes relevantes. | Administrador, Cliente |
+RF04.1 - Abrir ordem de Serviço  | Criar de order de serviço para solicitação de reparo ou manutenção, incluir informações sobre o cliente, descrição do problema e quaisquer detalhes relevantes. | Administrador |
 RF04.2 - Editar ordem de serviço | Atualiza uma OS informando:informações sobre o cliente, descrição do problema e quaisquer detalhes relevantes. | Administrador |
-RF04.3 - Consultar ordem de serviço | Consulta UMA OS informando: id. | Técnico, Administrador |
+RF04.3 - Consultar ordem de serviço | Consulta uma OS informando: id. | Técnico, Administrador, cliente |
 RF04.4 - Atualizar Status da OS         | Alterar o status da OS conforme andamento. | Técnico, Administrador |
 RF04.5 - Encerrar ordem de serviço         | Encerramento da OS após a conclusão das atividades.  | Técnico |
 RF04.6 - Emitir Relatório         | Gerar relatórios diversos, como histórico de serviços realizados, faturamento por período, entre outros.  | Técnico, Administrador |
@@ -92,8 +92,8 @@ Um componente essencial ao realizar OS. Ele tem: código, tipo, marca, modelo, q
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
 RF05.1 - Cadastrar Equipamento   | Insere novo equipamento informando: código, tipo, marca, modelo, quantidade. | Administrador |
-RF05.2 - Listar Equipamento   | Listagem dos equipamentos cadastrados. | Administrador |
-RF05.3 - Consultar Equipamento | Consultar equipamento informando: código, tipo, marca, modelo. | Administrador |
+RF05.2 - Listar Equipamento   | Listagem dos equipamentos cadastrados. | Administrador, Técnico |
+RF05.3 - Consultar Equipamento | Consultar equipamento informando: código, tipo, marca, modelo. | Administrador, Técnico |
 RF05.4 - Desativar Equipamento   | Desativa um equipamento informando seu identificador. | Administrador |
 
 ---
