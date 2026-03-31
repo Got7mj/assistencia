@@ -49,7 +49,7 @@ RF01.3 - Recuperar Senha      | Açao que permitir ao usuário recupere sua senh
 
 ### Entidade Cliente - RF02 - Manter Cliente
 Um cliente representa uma pessoa ou empresa que utiliza os serviços da assistência técnica. Possui informações detalhadas como nome, endereço, contato, CPF e histórico de serviços.
---
+
 Regra: Um cliente deve ser obrigatoriamente CPF ou CNPJ, não podendo ser ambos.
 
 Requisito                     | Descrição   | Ator |
