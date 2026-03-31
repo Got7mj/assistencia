@@ -255,10 +255,8 @@ RNF04 -	Segurança |	As senhas dos usuários devem ser armazenadas de forma crip
 
 ## Riscos
 
-Tabela com o mapeamento dos riscos do projeto, as possíveis soluções e os responsáveis.
-
 Data | Risco | Prioridade | Responsável | Status | Providência/Solução |
------  | ------ | ------ | ------ | ------ | ------ | ------ |
+------ | ------ | ------ | ------ | ------ | ------ |
 31/03/2026 | Mudança de escopo com inclusão de funcionalidades não planejadas durante o desenvolvimento. | Alta | Mariana | Monitorando	| Utilizar metodologia ágil com sprints curtas para priorizar entregas e congelar escopo a cada iteração. |
 31/03/2026 | Indisponibilidade ou falha na integração com gateway de pagamento. | Média | Jadson | Monitorando | Pesquisar e ter um plano B com outro provedor de pagamento; implementar registro de falhas para retentativa. |
 31/03/2026 | Dificuldade de adaptação dos usuários à nova ferramenta. |	Média |	Mariana | Monitorando |	Realizar treinamentos iniciais e produzir manuais de usuário simplificados. |
