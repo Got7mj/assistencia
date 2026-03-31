@@ -218,8 +218,8 @@ erDiagram
     
     USUARIO ||--o| CLIENTE : "pode ser"
     USUARIO ||--o| FUNCIONARIO : "pode ser"
-    CLIENTE ||--o| CLIENTE_PF : "especializacao PF"
-    CLIENTE ||--o| CLIENTE_PJ : "especializacao PJ"
+    CLIENTE ||--o| CLIENTE_PF : "tipo CPF"
+    CLIENTE ||--o| CLIENTE_PJ : "tipo CNPJ"
     CLIENTE ||--o{ ORDEM_SERVICO : "solicita"
     FUNCIONARIO ||--o{ ORDEM_SERVICO : "executa"
     ORDEM_SERVICO ||--o{ VISITA_TECNICA : "gera"
