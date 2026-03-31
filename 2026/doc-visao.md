@@ -134,6 +134,7 @@ RF08 - Pagar Conta        | Permitir a funcionalidade ao cliente selecionar uma 
 
 Abaixo apresentamos o modelo conceitual usando o **Mermaid**.
 
+```mermaid
 erDiagram
     USUARIO {
         int id PK
