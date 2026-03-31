@@ -258,21 +258,20 @@ Data |	Versão	| Descrição	| Autor |
 ------ | ------ | ------ | ------ |
 31/03/2026	| 0.0.1	| Criação do documento e template | Mariana
 31/03/2026	| 0.0.2	| Detalhamento dos User Stories US01 | Mariana
-31/03/2026	| 0.0.3	| Detalhamento dos User Stories US02 | Mariana
-31/03/2026	| 0.0.4	| Detalhamento dos User Stories US03 | Mariana
+31/03/2026	| 0.0.3	| Detalhamento dos User Stories US02 | Jadson
+31/03/2026	| 0.0.4	| Detalhamento dos User Stories US03 | Jadson
 31/03/2026	| 0.0.5	| Detalhamento dos User Stories US04 | Mariana
-31/03/2026	| 0.0.6	| Detalhamento dos User Stories US05 | Mariana
+31/03/2026	| 0.0.6	| Detalhamento dos User Stories US05 | Jadson
 31/03/2026	| 0.0.7	| Detalhamento dos User Stories US06 | Mariana
-31/03/2026	| 0.0.8	| Detalhamento dos User Stories US07 | Mariana
-31/03/2026	| 1.0.0 |Documento completo com todos os User Stories| Mariana
+31/03/2026	| 1.0.0 |Documento completo com todos os User Stories| Mariana e Jadson
 
 --------
 
-## User Story US01 - Autenticar no Sistema
+## User Story US01 - Manter Cadastro de Clientes
 
 |               |                                                                |
 | ------------- | :------------------------------------------------------------- |
-| **Descrição** | O sistema deve manter um cadastro de usuário que tem acesso ao sistema via login e senha. Um usuário tem os atributos name, id, email, username, data de nascimento, tipo de usuário, status, password, avatarURL. O email será o login e ele pode registrar-se diretamente no sistema, o avatarURL é um link para uma foto de seu perfil. Além disso o usuário poderá alterar alguns dados, como o e-mail ou a senha. O usuário administrador do sistema pode realizar as operações de adicionar, alterar, remover e listar os usuários comuns do sistema. |
+| **Descrição** | O sistema deve manter um cadastro de cliente que tem acesso ao sistema via login e senha. Um usuário tem os atributos name, id, email, username, data de nascimento, tipo de usuário, status, password, avatarURL. O email será o login e ele pode registrar-se diretamente no sistema, o avatarURL é um link para uma foto de seu perfil. Além disso o usuário poderá alterar alguns dados, como o e-mail ou a senha. O usuário administrador do sistema pode realizar as operações de adicionar, alterar, remover e listar os usuários comuns do sistema. |
 
 | **Requisitos envolvidos** |                                                    |
 | ------------- | :------------------------------------------------------------- |
@@ -281,38 +280,7 @@ Data |	Versão	| Descrição	| Autor |
 | RF03          | Consultar Usuários        |
 | RF04          | Excluir Usuário |
 | RF05          | Vizualizar detalhes do Usuário |
-O sistema deve permitir que usuários (clientes e funcionários) realizem login utilizando credenciais válidas.
-Campo	Descrição
-Título	Autenticar no Sistema
-Identificação	US01 - Autenticar
-Story	Como usuário do sistema (cliente ou funcionário), quero realizar login com minhas credenciais, para acessar as funcionalidades permitidas conforme meu perfil.
-Requisitos Relacionados	RF01.1, RF01.2, RF01.3
-Prioridade	Essencial
-Estimativa	8 h
-Tempo Gasto (real):	
-Tamanho Funcional	5 PF
-Critérios de Aceitação
-Código	Descrição
-CA01.01	O sistema deve permitir login com email e senha válidos.
-CA01.02	O sistema deve redirecionar o usuário para o dashboard correspondente ao seu perfil (cliente, técnico ou administrativo).
-CA01.03	O sistema deve exibir mensagem de erro ao informar credenciais inválidas.
-CA01.04	O sistema deve permitir que o usuário encerre sua sessão com segurança.
-CA01.05	O sistema deve permitir recuperação de senha via e-mail.
-CA01.06	O sistema deve bloquear o acesso a funcionalidades não autorizadas para o perfil do usuário.
-Testes de Aceitação (TA)
-Código	Descrição
-TA01.01	Login bem-sucedido com email e senha válidos.
-TA01.02	Tentativa de login com email inválido retorna mensagem de erro.
-TA01.03	Tentativa de login com senha incorreta retorna mensagem de erro.
-TA01.04	Logout: usuário clica em sair e é redirecionado para tela de login.
-TA01.05	Recuperação de senha: usuário solicita redefinição e recebe e-mail com link válido.
-TA01.06	Acesso negado: usuário tenta acessar URL restrita sem permissão.
-Responsáveis
-Papel	Nome
-Analista	Mariana
-Desenvolvedor	Jadson
-Revisor	Mariana
-Testador	Jadson
+
 User Story US02 - Manter Cadastro de Clientes
 Campo	Descrição
 Título	Manter Cadastro de Clientes
