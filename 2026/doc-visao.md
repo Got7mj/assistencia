@@ -147,12 +147,20 @@ erDiagram
         string nome
         string endereco
         string contato
-        string tipo "CPF ou CNPJ"
-        string cpf "se CPF"
-        string data_nascimento "se CPF"
-        string cnpj "se CNPJ"
-        string razao_social "se CNPJ"
-        string nome_fantasia "se CNPJ"
+        string tipo
+    }
+    
+    CLIENTE_PF {
+        int id PK
+        string cpf
+        date data_nascimento
+    }
+    
+    CLIENTE_PJ {
+        int id PK
+        string cnpj
+        string razao_social
+        string nome_fantasia
     }
     
     FUNCIONARIO {
@@ -161,7 +169,7 @@ erDiagram
         string cpf
         string contato
         float salario
-        string tipo "Tecnico ou Administrativo"
+        string tipo
         string horario_expediente
     }
     
@@ -210,13 +218,14 @@ erDiagram
     
     USUARIO ||--o| CLIENTE : "pode ser"
     USUARIO ||--o| FUNCIONARIO : "pode ser"
+    CLIENTE ||--o| CLIENTE_PF : "especializacao PF"
+    CLIENTE ||--o| CLIENTE_PJ : "especializacao PJ"
     CLIENTE ||--o{ ORDEM_SERVICO : "solicita"
-    FUNCIONARIO ||--o{ ORDEM_SERVICO : "executa como tecnico"
+    FUNCIONARIO ||--o{ ORDEM_SERVICO : "executa"
     ORDEM_SERVICO ||--o{ VISITA_TECNICA : "gera"
     ORDEM_SERVICO ||--|| CONTA_RECEBER : "gera"
     ORDEM_SERVICO ||--o{ ORDEM_SERVICO_EQUIPAMENTO : "contem"
-    EQUIPAMENTO ||--o{ ORDEM_SERVICO_EQUIPAMENTO : "usado em"
---
+    EQUIPAMENTO ||--o{ ORDEM_SERVICO_EQUIPAMENTO : "utilizado"
 
 #### Descrição das Entidades
 
