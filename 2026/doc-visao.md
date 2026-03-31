@@ -84,6 +84,7 @@ RF04.3 - Consultar ordem de serviço | Consulta uma OS informando: id. | Técnic
 RF04.4 - Atualizar Status da OS         | Alterar o status da OS conforme andamento. | Técnico, Administrador |
 RF04.5 - Encerrar ordem de serviço         | Encerramento da OS após a conclusão das atividades.  | Técnico |
 RF04.6 - Emitir Relatório         | Gerar relatórios diversos, como histórico de serviços realizados, faturamento por período, entre outros.  | Técnico, Administrador |
+
 ---
 
 ### Entidade Equipamento  - RF05 - Manter Equipamento 
@@ -103,8 +104,8 @@ Uma visita técnica representa um atendimento presencial vinculado a uma ordem d
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF06 - Agendar Visitas Técnicas  | Funcionalidade que permite ao funcionário administrativo agendar visitas presenciais para resolver problemas que não podem ser resolvidos remotamente.  | Administrador |
-
+RF06.1 - Agendar Visitas Técnicas  | Funcionalidade que permite ao funcionário administrativo agendar visitas presenciais para resolver problemas que não podem ser resolvidos remotamente.  | Administrador |
+RF06.2 - Registrar Realização da Visita	| Funcionalidade que permite ao técnico registrar a data e o resultado da visita.	|	Técnico |
 
 ---
 
@@ -113,7 +114,8 @@ Ao salvar uma OS é criado um conta receber automaticamente, na qual possuir: id
 
 Requisito                     | Descrição   | Ator           |
 ---------                     | ----------- | ----------     |
-RF07 - Registrar Conta Receber | Ao salvar uma OS é criado um conta receber automaticamente. | -- |
+RF07.1 - Registrar Conta Receber | Ao salvar uma OS é criado um conta receber automaticamente. | Sistema |
+RF07.2 - Registrar Pagamento Offline | O sistema deve permitir que o funcionário administrativo registre pagamentos recebidos fora do sistema. |	Administrativo |
 
 ---
 
@@ -132,6 +134,87 @@ RF08 - Pagar Conta        | Permitir a funcionalidade ao cliente selecionar uma 
 
 Abaixo apresentamos o modelo conceitual usando o **Mermaid**.
 
+erDiagram
+    USUARIO {
+        int id PK
+        string email
+        string senha
+    }
+    
+    CLIENTE {
+        int id PK
+        string nome
+        string endereco
+        string contato
+        string tipo "CPF ou CNPJ"
+        string cpf "se CPF"
+        string data_nascimento "se CPF"
+        string cnpj "se CNPJ"
+        string razao_social "se CNPJ"
+        string nome_fantasia "se CNPJ"
+    }
+    
+    FUNCIONARIO {
+        int id PK
+        string nome
+        string cpf
+        string contato
+        float salario
+        string tipo "Tecnico ou Administrativo"
+        string horario_expediente
+    }
+    
+    ORDEM_SERVICO {
+        int id PK
+        date data_abertura
+        date data_encerramento
+        string descricao_problema
+        string status
+        float valor_total
+        int cliente_id FK
+        int tecnico_id FK
+    }
+    
+    EQUIPAMENTO {
+        int id PK
+        string codigo
+        string tipo
+        string marca
+        string modelo
+        int quantidade
+    }
+    
+    VISITA_TECNICA {
+        int id PK
+        date data_agendamento
+        date data_realizacao
+        string resultado
+        int os_id FK
+    }
+    
+    CONTA_RECEBER {
+        int id PK
+        float valor
+        date data_emissao
+        date data_pagamento
+        string status_pagamento
+        int os_id FK
+    }
+    
+    ORDEM_SERVICO_EQUIPAMENTO {
+        int os_id FK
+        int equipamento_id FK
+        int quantidade
+    }
+    
+    USUARIO ||--o| CLIENTE : "pode ser"
+    USUARIO ||--o| FUNCIONARIO : "pode ser"
+    CLIENTE ||--o{ ORDEM_SERVICO : "solicita"
+    FUNCIONARIO ||--o{ ORDEM_SERVICO : "executa como tecnico"
+    ORDEM_SERVICO ||--o{ VISITA_TECNICA : "gera"
+    ORDEM_SERVICO ||--|| CONTA_RECEBER : "gera"
+    ORDEM_SERVICO ||--o{ ORDEM_SERVICO_EQUIPAMENTO : "contem"
+    EQUIPAMENTO ||--o{ ORDEM_SERVICO_EQUIPAMENTO : "usado em"
 --
 
 #### Descrição das Entidades
