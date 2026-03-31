@@ -14,7 +14,7 @@ Descrição: O Sistema de Gestão de Assistência Técnica é uma aplicação we
 Membro     |     Papel   |   E-mail   |
 ---------  | ----------- | ---------- |
 Jadson    | --  | -- |
-Mariana     | -- | araujodemedeirosmariana@gmail.com |
+Mariana     | Analista, Desenvolvedor | araujodemedeirosmariana@gmail.com |
 
 
 ### Matriz de Competências
