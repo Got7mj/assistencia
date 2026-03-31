@@ -226,6 +226,7 @@ erDiagram
     ORDEM_SERVICO ||--|| CONTA_RECEBER : "gera"
     ORDEM_SERVICO ||--o{ ORDEM_SERVICO_EQUIPAMENTO : "contem"
     EQUIPAMENTO ||--o{ ORDEM_SERVICO_EQUIPAMENTO : "utilizado"
+```
 
 #### Descrição das Entidades
 
